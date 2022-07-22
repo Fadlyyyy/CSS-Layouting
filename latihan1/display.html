@@ -1,3 +1,30 @@
+<!-- setiap tag html berada dalam sebuah kotak. properti display pada css mengatur perilaku dari kotak tersebut. -->
+
+
+<!-- setiap tag pada html memiliki nilai default untukl proprerti display. tetapi kita juga dapat mengubah perilaku dari tag tersebut dengan mengganti valuenya -->
+
+<!-- value dari display ada 4  -->
+<!-- 
+	inline
+	inline-block
+	block
+	none 
+-->
+
+
+<!-- 
+*inline adalah element htnml yang secara default tidak menambahkan baris baru ketika dibuat
+*lebar dan tinggi elemennya sebesar konten yang ada di dalamnya
+*kita tidak dapat mengatur tinggi dan lebar dari elemen inline
+*margin dan padding hanya akan memengaruhi elem secara horizontal, dan tidak vertikal
+ -->
+
+ <!-- 
+elemen inline 
+b, strong, i, em, a, span, sub, sup, button, input, label, select, textarea dll...
+  -->
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +35,7 @@
 </head>
 <body>
 
-
+<!-- div dan span tidak memiliki arti apapun, keduanya digunakan untuk mengelompokkan tag-tag hmtl!-->
 
 <div class="header">
 	<h1>Selamat Datang di Website Kami</h1>
@@ -16,19 +43,62 @@
 
 <div class="navigasi">
 	<h2>Daftar link</h2>
-	<a href="#">Link 1</a>
+	
+	<!-- elemen a defaultnya inline  -->
+	
+	<a href="#">ini adalah link 1</a>
+
+	<!-- kalau kontennya bertambah  maka lebarnya juga bertambah -->
+
+
+	<!-- jika ingin merubah ukuran dari tag a yang display inline ... yaitu dengan cara menggunakan value yang bernama inline block -->
+
+
+	<!-- 
+		deifinisi dari inline block
+
+		*tidak ada elemen yang secara default memiliki property display : inline-block;
+		note : defaultnya adalah jika bukan inline yaitu adalah inline-block;
+		jika ada yang inline-block; pasti itu diubah oleh user!
+		*kita harus ubah secara manual properti tersebut
+		*perilaku dasarnya sama-sama inline
+		*perbedaannya adalah, elemen inline-block dapat kita atur tinggi dan lebar-nya
+
+		contoh kasus : jika user membuat elemen inline-block; itu akan berada di baris yang sama bukan dibawahnya
+
+		 -->
+
+
 	<a href="#">Link 2</a>
 	<a href="#">Link 3</a>
 	<a href="#">Link 4</a>
+
+	<!-- link 5 akan ada disebelah kanan (inline) bukan dibawah (block)  -->
+	
+
 	<a href="#">Link 5</a>
 
 </div>
 
+<!-- hubungan tag span dan div dengan display karena div dan span memiliki properti display,namun semua element html mempunyai element display default  -->
+
+<!-- div displaynya adalah block sedangkan span default displaynya adalah inline -->
+
+
+<!-- maksud dari penjelasan diatas adalah  -->
+
 <div class="main">
 	<h2>Judul Artikel</h2>
+	
 	<img src="kucing.jpg">
+
+
+	<!-- hanya img saja elemen yang displaynya inline dan bisa user atur width dan heightnya / tinggi dan lebarnya -->
+
+
+
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	tempor incididunt ut <span>labore et dolore magna aliqua. Ut enim</span>  ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
@@ -49,3 +119,9 @@
 
 </body>
 </html>
+
+
+
+
+
+
