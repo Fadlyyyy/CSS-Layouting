@@ -1,27 +1,42 @@
+h1, h2, p {
+	background-color: lightgreen;
+}
+
+
+
+
 .navigasi li {
-	background-color: pink;
 	display: inline;
 }
 
 
-main {
-	background-color: lightblue;
+.main {
+	background-color: lightgreen;
+	width: 600px;
+}
+
+.main h2 {
+	background-color: pink;
+
 }
 
 .main span {
 	background-color: lightgreen;
 }
 
-a {
-	background-color: red;
-	width: 200px;
-	height: 200px;
+
+
+
+	/*  jika bagian a ditambahkan dengan display inline-block 
+	maka ia akan berubah dan kita bisa atur tinggi dan lebarnya */
+
+
 	/* tidak berpengaruh (lebar dan tingginya masih tetap sama ) */
 	/* display dari a adalah inline */
-}
 
 
 img {
 	width: 200px;
 	height: 200px;
+	display: none;
 }
