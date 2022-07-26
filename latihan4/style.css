@@ -1,0 +1,94 @@
+/* div {
+    width: 180px;
+    height: 200px;
+    background-color:coral;
+    margin: 20px auto;
+    padding: 50px; 
+    border: 10px solid black; */
+    
+    /* note : 10px 20px 30px 40px;
+    total dimensi = width/height + padding + border
+    harus kalkulasi lebar dan tingginya
+    contoh : 
+    width: 300px; (lebarnya)
+    height: 300px; (tingginya)
+    background-color:coral;
+    margin: 20px auto;
+    padding: 50px;
+    border: 10px solid black;
+
+    lebarnya 200
+    lalu tingginya 200
+    ditambahkan padding di ke 4 sisinya 50 
+    total lebarnya adalah 300 karena 
+    50+200+50+10+10 = 320 lebar
+    50+200+50+10+10 = 320 tinggi
+    jika ingin lebarnya menjadi 300 maka kurangi
+    menjadi 20 pada bagian width 20px
+
+    
+    */
+
+
+
+    /* menuliskan border hanya 1 sisi saja
+    border-left: 5px solid blue;
+    border-right: 5px dashed blue; */
+    
+    
+    
+    /* menuliskan border secara 1-1
+    border-width: 5px;
+    border-style: solid;
+    border-color: black; */
+    
+    
+    /* 
+    menuliskan border secara langsung
+    border: 5px solid black; */
+
+
+
+
+
+    /* note for border :
+    cara menuliskan border adalah
+    border: width style color;
+    style pada border : 
+    *solid
+    *dotted
+    *dashed
+    *double
+    
+    */
+
+    /* note for padding :
+    padding untuk sebuah box itu mempengaruhi ukurannya
+    contoh jika sebuah kotak ingin dibuat menjadi 300,
+    maka kita harus mengubah ukuran panjangnya  200
+    dan lebarnya menjadi 200 lalu hasilnya dikalikan
+    dengan margin dan paddingnya dengan ukuran 
+    50px maka jadilah box tersebut dengan ukuran 300px */
+    
+    /* padding: 10px 20px 30px 40px; */
+    /* padding-left: 50px;
+    padding-top: 10px; */
+/* } */
+
+div {
+    width: 600px;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+.satu {
+    background-color:royalblue;
+    padding: 10px;
+    border: 15px solid red;
+}
+
+.dua {
+    background-color:lightgreen;
+    padding: 30px;
+    border: 10px dashed orange;
+}
