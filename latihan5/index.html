@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- element body sudah mempunyai margin dan padding sendiri 
+        sehingga jika dihapus marginnya dengan cara memberikan margin 0px dibagian body.
+        cara tersebut dinamakan reset terhadap properti margin dari
+        elemen html yang ada, dan nilai margin tersebut bukan
+        hanya ada pada body saja namun juga ada pada elemen lain
+        contohnya yaitu : h1 dan juga p 
+    -->
+
+    <!-- mengapa css reset diperlukan? tujuannya adalah
+    agar user punya kendali penuh terhadap css yang akan dibuat. -->
+
+
+    <!-- namun css reset ini belum praktis karena
+        ketika ditulis body, h1, p { margin: 0px;   /* css reset */}\
+        itu dilakukan untuk elemen yang dimiliki user saja
+        bagaimana jika elemennya bertambah? ya caranya musti ditambahkan lagi
+        secara manual .. jadi cara ini kurang praktis
+     -->
+
+     <!-- cara melakukan reset css dengan praktis adalah
+        dengan cara menggunakan selektor universal dengan cara menggunakan
+        tanda
+         * {
+    margin: 0px;
+    padding: 0px; 
+    [css reset praktis/mudah] } 
+    yang artinya semua elemen yang ada 
+    didalam html diberi margin dan paddingnya 0 sehingga
+    pada saat direfresh semua padding dan marginnya 0
+      -->
+
+      <!-- namun menggunakan selektor universal juga tidak baik..
+    mengapa? karena selektor universal memberikan padding dan margin 0 
+    ke semua elemen yang ada didalam html meskipun user tidak menggunakannya.
+-->
+
+     
+    <div></div>
+    <h1>Hello World!</h1>
+    <h2></h2>
+    <p>
+        Lorem ipsum dolor sit amet 
+        consectetur, adipisicing elit. 
+        Architecto, necessitatibus cumque 
+        reprehenderit veritatis voluptatum 
+        eos facere sapiente sint tempore quam 
+        doloribus provident, voluptas eveniet 
+        eum blanditiis obcaecati culpa quis 
+        velit.
+    </p>
+</body>
+</html>
