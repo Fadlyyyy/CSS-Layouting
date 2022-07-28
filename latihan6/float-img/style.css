@@ -1,0 +1,14 @@
+.container {
+    width: 600px;
+    border: 1px solid black;
+    margin: auto;
+    padding: 5px;
+}
+
+
+img {
+    width: 300px;
+    height: 300px;
+   float: left;  /* properti untuk membuat teks mengelilingi gambar yang teksnya berada di sebelah kiri gambar */
+    margin: 10px;
+}
