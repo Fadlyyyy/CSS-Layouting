@@ -1,0 +1,41 @@
+div {
+    width: 100px;
+    height: 100px;
+}
+
+.satu {
+    background-color:salmon;
+}
+
+.dua {
+    background-color:lightgreen;
+    float: right;
+    /* float: left; */
+    /* margin-left: 10px; */
+    /* setelah diberi float:left; hasilnya adalah
+    kotak berwarna birunya hilang,tepat berada dibawah kotak kedua
+    sebenarnya kotak birunya tidak hilang.
+    Tetapi kotak birunya ada dibelakang kotak hijau!  */
+   
+    /* penjelasan dari contoh kasus out-of-flow
+    diatas adalah ketika kotak kedua diberi properti
+    float:left; kotak biru menganggap bahwa kotak hijau tidak ada
+    karena kotak hijau sudah keluar dari flow normalnya*/
+
+    /* sewaktu diberi margin left 10px pada kotak hijau maka
+    kotak birunya akan terlihat dibelakang kotak hijau*/
+
+
+    /* namun jika diberi float:right; maka ia akan dipaksa
+    untuk berada di sebelah kanan elemen pembungkusnya
+    <div class="dua"></div> elemen pembungkusnya adalah body
+    maka ia akan ada disebelah kanan body
+     */
+
+
+}
+
+.tiga {
+
+    background-color: lightskyblue;
+}
