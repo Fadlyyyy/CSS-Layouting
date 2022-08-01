@@ -11,10 +11,34 @@
     
     <div class="container">
         <img src="../float-img/img/kucing.jpg" alt="kucing">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam incidunt voluptates ipsum totam rem quae explicabo error, voluptate provident nisi! Voluptatum aspernatur a doloremque sequi? Reprehenderit libero obcaecati recusandae porro eveniet nisi mollitia et neque fuga tempore cupiditate quasi aspernatur quos dolores necessitatibus est eum exercitationem ullam ad, omnis incidunt quisquam aliquam atque ratione. Autem perspiciatis enim obcaecati expedita consequatur maxime nesciunt facilis mollitia natus aspernatur minus porro atque id amet nemo tempore quod quasi voluptate a, eligendi officia? Voluptates, quas magnam voluptate assumenda aut aliquam officia rerum in non sit vero voluptatem qui tempore, ullam vel doloremque impedit aperiam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="clear"></div>
     </div>
+ 
 
+<!-- terjadi masalah disini pada saat menggunakan teks wrapping
+    ini akan menjadi masalah ketika pada saat teksnya lebih sedikit dari pada
+    tinggi gambarnya.
+    containernya runtuh karena ia menganggap tidak ada gambar
+-->
+<!-- 
+    cara menghentikan atau ,membersihkan float :
+    *menggunakan properti overflow
+    *menggunakan <div> kosong
+    *menggunakan teknik micro clearfix
 
+    note : namun diatas adalah cara untuk mengakalinya saja
+    cara yang tepat untuk solusi permasalahan diatas adalah dengan
+    menggunakan peroperti css bernama Clear
+    yang berfungsi menghentikan atau membersihkan float yang sudah dibuat!
+    valuenya!
+    *left
+    *right
+    *both (jika menggunakan kedua float yakni left dan right user bisa menggunakan both untuk memversihkan floatnya)
+    pastikan jika user menggunakan float jika sudah tidak dibutuhkan maka
+    user harus menghentikan atau membersihkan floatnya!
+    
+ -->
 
 </body>
 </html>
