@@ -1,0 +1,81 @@
+div {
+    width: 200px;
+    height: 200px;
+}
+
+.satu {
+    background-color: lightgreen;
+}
+
+.dua {
+    background-color: violet;
+    position: relative;
+    top:30px;
+    
+    /* pada saat diberi position relative secara kasat mata
+    tidak ada yang berubah pada gambar! namun jika dicontohkan dalam bidang 3 dimensi
+    maka kotaknya maju 1 dimensi!
+    ketika ia maju 1 dimensi maka ia mempunyai akses ke properti
+    yang namanya top, left, bottom, right */
+}
+
+.tiga {
+    background-color:gold ;
+}
+
+
+/* position css */
+
+/* value css position
+    * static (default)
+    *relative
+    *absolute
+    *fixed
+*/
+
+/* jika kita tidak memberikan properti position pada
+    sebuah elemen maka default dari properti positionnya adalah
+    static!  
+*/
+
+/* css position
+
+*static adadalah nilai default dari tiap-tiap elemen ketika tidak diberi
+properti position pada elemen tersebut.
+
+*menggunakan position selain static (non-static) akan membuat
+sebuah elemen menjadi seolah-olah berada didimensi dari elemen lainnya
+
+*elemen yang diberi position selain static dapat menggunakan
+properti top, left, dan right untuk mengatur posisi dari elemen tersebut.
+
+
+*/
+
+/* penjelasan dari position css adalah
+yang tadinya berada pada flow normal user buat menjadi
+keluar dari flow atau out-of-flow atau maju 1 dimensi  */
+
+
+/* position relative
+
+*ketika ia menggerakkan elemen dengan posisi relative
+(menggunakan elemen top, left, bottom, right) maka ruang yang
+ditempati oleh elemen tersebut masih ada
+
+*ketika kita menggerakkan elemen dengan posisi relative
+,elemen akan bergerak relatif terhadap posisi semula-nya
+
+*jika kita memberi properti top:0; dan left:0; maka elemen
+tidak akan berubah posisinya!
+
+
+
+
+*/
+
+/* user jarang menggeser dengan properti relatif
+user biasa  memberika properti relatif terhadap sebuah elemen 
+itu hanya karena user ingin membuat elemennya  maju satu dimensi saja  atau keluar dari flownya saja
+karena biasanya yang menggerakkan position non-static itu
+adalah elemen dengan position absolut*/
