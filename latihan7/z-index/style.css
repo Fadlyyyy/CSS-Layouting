@@ -1,0 +1,53 @@
+div {
+    width: 200px;
+    height: 200px;
+}
+
+.satu {
+    background-color:salmon;
+    position: absolute;
+}
+
+.dua {
+    background-color:lightgreen;  
+    position:absolute;  
+    top: 100px;
+    left: 100px;
+    z-index: 99999;
+}
+
+.tiga {
+    background-color:royalblue;
+    position:absolute;
+    left: 200px;
+    top: 200px;
+    z-index: -99999;
+}
+
+
+/* ketika ada 3 kotak div dengan warna salmon lightgreen dan juga royalblue
+memiliki position yang sama yaitu absolute kenapa yang muncul dilayar adalah warna biru?
+karena kotak berwarna biru berada paling depan dari kedua tumpukan yang ada.
+mengapa bisa warna biru yang berada dipaling depan? karena jika dilihat mark up atau htmlnya
+div dengan kotak biru ditulis dipaling bawah makanya ia berada dipaling depan,
+itu adalah perilaku default atau normal dari html yang kita punya.
+*/
+
+/* fungsi dan penjelasan mengenai z-index
+
+*fungsi z-index adalah untuk mengatur tumpukan dari elemen
+ketika diberi elemen non-static jadi ketika elemennya non-static
+z-index barulah bisa digunakan.
+
+*z-index bisa digunakan untuk mengatur tumpukan dari elemen yang non-static yaitu
+relatif absolute dan fixed.
+caranya adalah dengan memberikan elemen tersebut dengan properti z-index
+bisa diberikan nilai berupa angka, semakin besar angkanya elemennya akan berada semakin depan.
+
+*sumbu x itu horizontal dan sumbu y itu vertikal.
+sumbu z itu 3 dimensi,semakin besar nilai z-indexnya maka elemennya akan berada semakin maju.
+
+
+
+
+*/
