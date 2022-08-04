@@ -1,0 +1,137 @@
+
+body {
+    height: 2000px;
+}
+
+
+
+div {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.satu {
+    background-color: lightgreen;
+}
+
+.dua {
+    background-color: violet;
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+
+    
+    /*Penjelasan mengenai fixed  
+    
+    *perilaku pertama pada elemen fixed adalah
+     ketika kita menggerakkan elemen tersebut menggunakan
+     (top,left,bottom dan right) maka dia akan bergerak selalu
+     reatif terhadap window pada browser , jadi ia tidak akan memperdulikan
+     elemen parentnya meskipun parentnya non-static
+    
+    *ketika discroll halamannya elemen tersebut akan
+    terkunci diposisi tersebut. jadi ia tidak akan ikut bergeser
+
+
+    *fixed juga biasa digunakan jika ingin membuat top bar diatas window
+    seperti halnya facebook pada bagian navigasi atasnya walaupun halamannya di scroll
+
+
+    
+    */
+    
+    
+    /*
+    
+    pada kasus kedua ada sebuah kotak dengan garis hijau yang berada di tengah yang mengelilingi
+    3 kotak yaitu hijau violet dan gold, ketika diberi top 0 dan left 0 harusnya kotak yang berwarna
+    violet akan berada di posisi kiri didalam kotak garis hijau, alasannya adalah karena kotak yang bergaris hijau
+    containernya itu adlaah parent dari kotak yang violet
+    tapi kejadiannya adalah kotak yang violet tetap keluar dari kotak hijau
+    ini karena walau diberi container jika dilihat secara detail containernya berbeda dimensi dengan kotak berwarna violet
+    jadi ketika diberi top 0 dan left 0 maka ia akan keluar.
+    supaya ia berada di dalam kotak solusinya adalah membuat kotak dengan garis hijau ini atau sicontainernya ini
+    berada di dimensi yang sama dengan kotak berwarna violet.
+    disinilah kita membutuhkan bantuan dari position relatif, mengapa?
+    karena kita tahu bahwa position relatif itu sama seperti absolute 
+    dia membuat sebuah elemen keluar dari flow jadi containernya harus diberi value non-static
+    pada kasus inilah kita coba beri relatif,
+    sehingga logikanya adalah containernya akan naik 1 dimensi jadi kotak yang violetnya
+    pada saat diberi top dan left 0 ia akan tepat berada di atas containernya.
+
+
+
+    */
+    
+
+
+    /*position: absolute;*/
+   /* top: 0px;
+    right: 0px*/;
+    /*left: 50px;
+    top: 100px;*/
+
+    /*jika diberi top: 0px; dan left: 0px; hasilnya adalah
+    kotak violet akan naik ke kotak hijau dan kotak gold berada di posisi kotak violet
+    karena jika dilihat dari elemen html div dengan class 2 tidak mempunyai elemen
+    parent selain body jadi anggap saja parentnya body 
+    jadi makanya tentu saja 0,0nya dia akan relatif terhadap body
+    tapi sebetulnya ini tidak relatif terhadap body tapi ia relatif terhadap elemen window
+    namun anggap saja  ini relatif terhadap body dan body itu adalah pembungkus semua halaman */
+
+
+    /* jika diberi top 0 dan right 0  maka ia akan berada di sebelah kanan window atau dikanan body*/
+
+
+
+    /*jika digeser yang violet ke sebelah kanan dengan memberikan left: 50px;
+    maka ia akan bergeser ke kanan dan barulah kotak berwarna goldnya kelihatan
+    */
+
+
+    /* namun jika diberi top:100px; mengapa kotak violetnya menjadi naik
+     penjelasannya adalah Ketika kita menggerakkan elemen dengan posisi absolute, elemen akan bergerak
+    relatif terhadap posisi dari elemen parent-Nya ini yang membedakan absolute dan relative */
+
+
+
+    /*saat diberi position absolute kotak goldnya hilang..
+    tapi ternyata kotak goldnya hanya sembunyi dibalik kotak violet
+    sebetulnya ilustrasinya kotak violet naik 1 dimensi sama seperti relative
+    tapi kotak yang gold naik mengisi kotak violet yang sebelumnya.
+    jadi artinya jika diberi sebuah elemen yang positionnya absolute 
+    maka selain elemennya maju 1 dimensi tempat dia berada sebelumnya itu dianggap tidak ada */
+}
+
+.tiga {
+    background-color:gold ;
+}
+
+.container {
+    width: 600px ;
+    height: 650px;
+    border: 10px solid green;
+    position: relative;
+}
+
+
+
+
+
+/*
+teori elemen dengan position absolute
+
+*Ketika kita menggerakkan elemen dengan posisi absolute 
+(menggunakan properti top left right dan bottom),ruang yang
+ditempati oleh elemen tersebut dianggap tidak ada oleh elemen lain yang static
+
+*Ketika kita menggerakkan elemen dengan posisi absolute, elemen akan bergerak
+relatif terhadap posisi dari elemen parent-Nya, selama elemen parent-nya memiliki posisi yang juga non-static
+
+*jika kita memberi properti top: 0; dan left: 0; maka elemen akan berada diujung kiri atas dari elemen parent-nya 
+
+
+*/
